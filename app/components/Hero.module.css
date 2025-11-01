@@ -1,0 +1,144 @@
+.heroWrapper {
+  align-self: stretch;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heroContainer {
+  align-self: stretch;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+  background-image: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content {
+  width: 548px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  display: flex;
+  z-index: 1;
+}
+
+.textGroup {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+
+.title {
+  align-self: stretch;
+  color: white;
+  font-size: 58px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 63.80px;
+  word-wrap: break-word;
+}
+
+.description {
+  width: 548px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 30.60px;
+  word-wrap: break-word;
+}
+
+.buttonGroup {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+  display: inline-flex;
+  width: 366px;
+  height: 48px;
+}
+
+.primaryButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 470px;
+  height: 838px;
+}
+
+.secondaryButton {
+  height: 48px;
+  padding: 14px 24px;
+  border-radius: 16px;
+  outline: 1px white solid;
+  outline-offset: -1px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 17.60px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .heroWrapper {
+    padding: 20px;
+  }
+  .heroContainer {
+    padding: 40px;
+  }
+  .content {
+    width: 100%;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .description {
+    width: 100%;
+    font-size: 16px;
+  }
+  .buttonGroup {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+  }
+  .heroImage {
+    display: none; 
+  }
+}
