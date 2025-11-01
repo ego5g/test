@@ -123,6 +123,10 @@
   cursor: pointer;
 }
 
+.primaryButton {
+  cursor: pointer;
+}
+
 .buttonText {
   color: white;
   font-size: 16px;
