@@ -1,0 +1,113 @@
+.ctaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 80px;
+  gap: 10px;
+  width: 1440px;
+  height: 493px;
+  align-self: stretch;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 80px;
+  gap: 10px;
+  isolation: isolate;
+  width: 1280px;
+  height: 493px;
+  border-radius: 40px;
+  align-self: stretch;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  width: 1280px;
+  height: 493px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(106.72deg, #151717 -7.73%, #2C2F2F 44.82%, #54707B 71.8%, #272928 94.06%, #272928 110.12%);
+  z-index: 0;
+}
+
+.image {
+  position: absolute;
+  width: 443px;
+  height: 446;
+  left: 750px;
+  top: 47px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 548px;
+  height: 253px;
+  z-index: 1;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 548px;
+  height: 169px;
+  align-self: stretch;
+}
+
+.txt h1 {
+  width: 548px;
+  height: 64px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 110%;
+  color: #FFFFFF;
+  align-self: stretch;
+}
+
+.txt p {
+  width: 548px;
+  height: 93px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #FFFFFF;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 23px;
+  width: 383px;
+  height: 52px;
+}
+.primaryButton {
+  cursor: pointer;
+}
+
+
+.appstore {
+  width: 180px;
+  height: 52px;
+}
+
+.googleplay {
+  width: 180px;
+  height: 52px;
+}

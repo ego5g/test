@@ -3,15 +3,15 @@ import styles from './Destinations.module.css';
 const destinations = [
   {
     name: 'Students',
-    image: '/Destination Card.png'
+    image: '/card.png'
   },
   {
     name: 'Professionals',
-    image: '/Destination Card (1).png'
+    image: '/card1.png'
   },
   {
     name: 'Writers',
-    image: '/Destination Card (2).png'
+    image: '/card2.png'
   }
 ];
 
