@@ -3,35 +3,34 @@
 import React, { useRef } from 'react';
 import styles from './Testimonials.module.css';
 
-// Sample data for testimonials
 const testimonials = [
   {
     quote: 'The excellent voice recognition quality of Curio app makes it perfect for dictation and note taking. I have never come across such accuracy before',
-    name: 'Jane Doe',
-    title: 'Product Manager, TechCorp',
-    image: '/1.png',
-    color: 'cardGreen',
-  },
-  {
-    quote: 'The excellent voice recognition quality of Curio app makes it perfect for dictation and note taking. I have never come across such accuracy before',
-    name: 'Peter Jones',
-    title: 'Lead Developer, Innovate LLC',
-    image: '/2.png',
-    color: 'cardPink',
-  },
-    {
-    quote: 'The excellent voice recognition quality of Curio app makes it perfect for dictation and note taking. I have never come across such accuracy before',
     name: 'Adam Jordan',
-    title: 'CEO, Design Studio',
+    title: 'CEO, Go Design Studio',
+    image: '/1.png',
+    bgColor: '#B2E3F7',
+  },
+  {
+    quote: 'With the help of Curio, my work has become much easier and efficient. It provides quick and accurate answers to any questions I come across',
+    name: 'Jidu Akita',
+    title: 'Head of HR, Kario',
+    image: '/2.png',
+    bgColor: '#C8F7A8',
+  },
+  {
+    quote: 'I love how Curio personalizes to my needs and offers recommendations and solutions based on my preferences and behaviors',
+    name: 'Mike Donavan',
+    title: 'Designer, Stilll',
     image: '/3.png',
-    color: 'cardBlue',
+    bgColor: '#FF99CA',
   },
   {
     quote: 'The excellent voice recognition quality of Curio app makes it perfect for dictation and note taking. I have never come across such accuracy before',
-    name: 'Jane Doe',
-    title: 'Product Manager, TechCorp',
+    name: 'Amber Reav',
+    title: 'Musician, Ohio College',
     image: '/4.png',
-    color: 'cardGreen',
+    bgColor: '#B2E3F7',
   },
 ];
 
@@ -40,7 +39,7 @@ export default function Testimonials() {
 
   const scroll = (scrollOffset: number) => {
     if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollBy({ left: scrollOffset, behavior: 'smooth' });
+      scrollContainerRef.current.scrollBy({ left: scrollOffset, behavior: 'smooth' });
     }
   };
 
@@ -56,12 +55,12 @@ export default function Testimonials() {
         <div className={styles.arrowsContainer}>
           <button className={styles.arrowButton} onClick={() => scroll(-434)} aria-label="Scroll left">
             <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.833 9.99996H4.16634M4.16634 9.99996L9.99967 15.8333M4.16634 9.99996L9.99967 4.16663" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M15.833 9.99996H4.16634M4.16634 9.99996L9.99967 15.8333M4.16634 9.99996L9.99967 4.16663" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
           <button className={styles.arrowButton} onClick={() => scroll(434)} aria-label="Scroll right">
             <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.16602 9.99996H15.8327M15.8327 9.99996L9.99935 4.16663M15.8327 9.99996L9.99935 15.8333" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M4.16602 9.99996H15.8327M15.8327 9.99996L9.99935 4.16663M15.8327 9.99996L9.99935 15.8333" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
@@ -69,13 +68,13 @@ export default function Testimonials() {
 
       <div className={styles.cardsContainer} ref={scrollContainerRef}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className={`${styles.testimonialCard} ${styles[testimonial.color]}`}>
-            <p className={styles.cardQuote}>"{testimonial.quote}"</p>
+          <div key={index} className={styles.testimonialCard} style={{ backgroundColor: testimonial.bgColor }}>
+            <div className={styles.cardQuote}>"{testimonial.quote}"</div>
             <div className={styles.cardUser}>
-              <img src={testimonial.image} alt={testimonial.name} className={styles.userImage} />
+              <img className={styles.userImage} src={testimonial.image} alt={testimonial.name} />
               <div className={styles.userInfo}>
-                <p className={styles.userName}>{testimonial.name}</p>
-                <p className={styles.userTitle}>{testimonial.title}</p>
+                <div className={styles.userName}>{testimonial.name}</div>
+                <div className={styles.userTitle}>{testimonial.title}</div>
               </div>
             </div>
           </div>

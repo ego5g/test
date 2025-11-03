@@ -1,3 +1,4 @@
+
 .header {
   width: 100%;
   max-width: 1440px;
@@ -16,148 +17,29 @@
   position: relative;
 }
 
-.logoBackground {
-  width: 65.61px;
-  height: 65.61px;
-  left: 0;
-  top: 0;
-  position: absolute;
-  background: black;
-  border-radius: 11.22px;
-}
-
-.logoAccentPink {
-  width: 13.03px;
-  height: 13.03px;
-  left: 41.71px;
-  top: 39.69px;
-  position: absolute;
-  transform: rotate(-90deg);
-  transform-origin: top left;
-  background: #FF86B7;
-  border-radius: 9999px;
-}
-
-.logoAccentViolet {
-  width: 34.90px;
-  height: 40.52px;
-  left: 11.01px;
-  top: 12.85px;
-  position: absolute;
-  background: #6842F7;
-}
-
-.logoTextContainer {
-  width: 123.86px;
-  height: 38.89px;
-  left: 76.14px;
-  top: 9.82px;
-  position: absolute;
-  overflow: hidden;
-}
-
-.logoText1 {
-  width: 29.60px;
-  height: 28.81px;
-  left: 94.26px;
-  top: 10.08px;
-  position: absolute;
-  background: #150D33;
-}
-
-.logoText2 {
-  width: 25.20px;
-  height: 27.25px;
-  left: 28.24px;
-  top: 11.02px;
-  position: absolute;
-  background: #150D33;
-}
-
-.logoText3 {
-  width: 24.28px;
-  height: 28.71px;
-  left: 0;
-  top: 10.11px;
-  position: absolute;
-  background: #150D33;
-}
-
-.logoText4 {
-  width: 17.43px;
-  height: 28.07px;
-  left: 59.39px;
-  top: 9.87px;
-  position: absolute;
-  background: #150D33;
-}
-
-.logoText5 {
-  width: 8.12px;
-  height: 26.71px;
-  left: 81.26px;
-  top: 11.16px;
-  position: absolute;
-  background: #150D33;
-}
-
-.logoTextAccent {
-  width: 8.43px;
-  height: 8.43px;
-  left: 81.89px;
-  top: 0;
-  position: absolute;
-  background: #FF86B7;
-  border-radius: 9999px;
-}
-
-.button {
-  padding: 14px 24px 14px 18px;
-  background: #6A65FD;
-  border-radius: 16px;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  display: flex;
-  border: none;
-  cursor: pointer;
-}
-
 .primaryButton {
   cursor: pointer;
 }
 
-.buttonText {
-  color: white;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 17.60px;
-  word-wrap: break-word;
+/* Tablet */
+@media (max-width: 1024px) {
+  .header {
+    padding: 30px 40px;
+  }
 }
 
-.arrow {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.arrowIcon {
-  width: 8.33px;
-  height: 8.33px;
-  left: 5.83px;
-  top: 5.83px;
-  position: absolute;
-  outline: 1.50px white solid;
-  outline-offset: -0.75px;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
   .header {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
     height: auto;
+    padding: 20px;
+  }
+
+  .logoContainer {
+    width: 150px; /* smaller logo */
+  }
+
+  .primaryButton {
+    cursor: pointer;
   }
 }
